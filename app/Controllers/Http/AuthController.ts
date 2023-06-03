@@ -2,7 +2,7 @@ import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import Database from '@ioc:Adonis/Lucid/Database'
 
 export default class AuthController {
-  public async validateNonce({ auth, request, response }: HttpContextContract) {
+  public async login({ auth, request, response }: HttpContextContract) {
     const account_name = 'kylan'
     const [user] = await Database.query().from('users').where('account_name', account_name)
     try {

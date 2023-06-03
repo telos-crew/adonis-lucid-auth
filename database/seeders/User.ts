@@ -5,7 +5,7 @@ export default class extends BaseSeeder {
   public async run() {
     // Write your database queries inside the run method
     await Database.table('users').insert({
-      account_name: 'Kylan',
+      account_name: 'kylan',
     })
   }
 }
