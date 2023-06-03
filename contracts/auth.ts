@@ -1,3 +1,5 @@
+import User from 'App/Models/User'
+
 /**
  * Contract source: https://git.io/JOdz5
  *
@@ -32,8 +34,8 @@ declare module '@ioc:Adonis/Addons/Auth' {
     |
     */
     user: {
-      implementation: DatabaseProviderContract<DatabaseProviderRow>
-      config: DatabaseProviderConfig
+      implementation: LucidProviderContract<typeof User>
+      config: LucidProviderConfig<typeof User>
     }
   }
 

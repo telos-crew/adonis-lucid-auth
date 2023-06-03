@@ -41,7 +41,7 @@ const authConfig: AuthConfig = {
         | Name of the driver
         |
         */
-        driver: 'database',
+        driver: 'lucid',
 
         /*
         |--------------------------------------------------------------------------
@@ -64,7 +64,7 @@ const authConfig: AuthConfig = {
         | of the mentioned columns to find their user record.
         |
         */
-        uids: ['email'],
+        uids: ['id'],
 
         /*
         |--------------------------------------------------------------------------
@@ -75,7 +75,7 @@ const authConfig: AuthConfig = {
         | field and `remember_me_token` column.
         |
         */
-        usersTable: 'users',
+        // usersTable: 'users',
       },
     },
   },
