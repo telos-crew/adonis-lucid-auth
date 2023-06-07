@@ -6,7 +6,7 @@ export default class AuthController {
   public async login({ auth, request, response }: HttpContextContract) {
     const account_name = 'kylan'
     const user = await User.query().where({ account_name }).firstOrFail()
-    console.log('user', user)
+    // console.log('user', user)
     try {
       await auth.use('web').login(user, true)
     } catch (err) {
