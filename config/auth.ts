@@ -76,6 +76,7 @@ const authConfig: AuthConfig = {
         |
         */
         // usersTable: 'users',
+        model: () => import('App/Models/User'),
       },
     },
   },
